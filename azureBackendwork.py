@@ -21,7 +21,11 @@ db = mysql.connector.connect(
     )
 
 
-cursor = cursor.execute("")
+cursor = db.cursor()
+
+
+# audioFiles is a list of the audioFile
+audioFiles = cursor.execute("SELECT id, audio FROM rd_tbl WHERE transcript IS NULL" )
 
 
 
