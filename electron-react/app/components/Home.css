@@ -9,6 +9,10 @@
   font-size: 5rem;
 }
 
-.container a {
+.container a, label, input {
   font-size: 1.4rem;
+}
+
+.container input {
+  margin: 2rem .3rem;
 }
