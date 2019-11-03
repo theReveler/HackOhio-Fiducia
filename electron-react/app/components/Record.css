@@ -39,9 +39,8 @@
   .recordWidget {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(auto, 4);
+    grid-template-rows: repeat(auto, 3);
     grid-template-areas: 
-    "title            title"
     "recordButton     time"
     "sessionNameLabel sessionName"
     ".                submitButton";
@@ -55,6 +54,7 @@
 
   .title {
     grid-area: title;
+    margin: 5rem 0 0 5rem;
   }
 
   .recordButton {
@@ -72,15 +72,18 @@
     grid-area: sessionNameLabel;
     justify-items: right;
     width:100%;
-    font-size: 1.5em;
+    font-size: 2.5em;
   }
 
   .sessionName {
     grid-area: sessionName;
-    font-size: 1.5em;
+    font-size: 2.5em;
+    border-radius: .5rem;
   }
 
   .submitButton {
     grid-area: submitButton;
-    font-size: 1.5em;
+    font-size: 2.5em;
+    border-radius: .5rem;
+    margin: .3rem;
   }
