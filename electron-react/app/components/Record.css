@@ -36,3 +36,43 @@
     background-color: rgba(0, 0, 0, 0.5);
   }
   
+  .recordWidget {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "title            title"
+    "recordButton     time"
+    "sessionNameLabel sessionName"
+    ".                submitButton";
+    gap: 2rem;
+    padding: 4rem;
+    justify-self: center;
+    width:100%;
+  }
+
+  .title {
+    grid-area: title;
+  }
+
+  .recordButton {
+    grid-area: recordButton;
+  }
+
+  .time {
+    grid-area: time;
+  }
+
+  .sessionNameLabel {
+    grid-area: sessionNameLabel;
+    justify-items: right;
+    width:100%;
+  }
+
+  .sessionName {
+    grid-area: sessionName;
+  }
+
+  .submitButton {
+    grid-area: submitButton;
+  }
